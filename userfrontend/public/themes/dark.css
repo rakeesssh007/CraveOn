@@ -1,0 +1,22 @@
+.dark {
+  --bg-color: #000000;
+  --surface-color: #1a1a1a;
+  --theme-color: #ffe08a;
+  --text-color: #f3f3f3;
+  --text-color-secondary: #cfcfcf;
+  --button-bg: #ffe08a;
+  --button-hover: #ffc400;
+  --button-text: #1b1b1b;
+  --header-bg: #4e0a0a;
+  --card-bg: #1a1a1a;
+
+  --footer-bg: #141414;
+  --footer-text: #f3f3f3;
+  --footer-secondary: #aaa;
+  --footer-divider: #2a2a2a;
+}
+
+.dark body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

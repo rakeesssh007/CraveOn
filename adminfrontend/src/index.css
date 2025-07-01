@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --theme-color: #4f8cff;
+
+  --bg-color: #111;
+  --surface-color: #1a1a1a;
+  --border-color: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #999;
+  --accent-color: #4f8cff;
+  --success-color: #4caf50;
+  --error-color: #f44336;
+
+  --font-sm: 1.2rem;
+  --font-base: 1.7rem;
+  --font-lg: 2.2rem;
+  --font-xl: 2.6rem;
+}
+
+html {
+  font-size: 80%; /* 1rem = 12.8px */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--font-base);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.screen {
+  width: 100%;
+  max-width: 1300px;
+  padding: 4rem 6vw;
+  margin: 0 auto;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  padding: 3.5rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  margin: auto;
+}
+
+/* === Typography === */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: var(--font-xl);
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: var(--font-lg);
+}
+
+/* === Inputs, Selects, Textareas === */
+input,
+select,
+textarea {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 1.4rem 1.8rem;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+select {
+  appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* === Buttons === */
+button {
+  padding: 1.3rem 2.2rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3d74dc;
+}
+
+/* === Tables and Lists === */
+.list-table-format {
+  display: grid;
+  grid-template-columns: 0.7fr 2.2fr 1.2fr 1fr 0.6fr;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  font-size: 1.6rem;
+  gap: 1.4rem;
+}
+
+.list-table-format img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* === Navbar Specific === */
+.navbar-logo {
+  width: 60px;
+}
+
+.navbar-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+/* === Responsive Scaling === */
+@media (max-width: 768px) {
+  html {
+    font-size: 72%;
+  }
+
+  .screen {
+    padding: 3rem 4vw;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .list-table-format {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 60%; /* 1rem = ~9.6px for tight screens */
+  }
+
+  .screen {
+    padding: 2rem 3vw;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .list-table-format {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .order-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+
+    .navbar {
+    padding: 1rem 3vw;
+  }
+
+  .navbar-welcome {
+    font-size: 1.4rem;
+  }
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .navbar-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

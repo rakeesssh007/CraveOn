@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4vw;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.navbar-welcome {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.navbar-logo {
+  height: auto;
+  width: 200px;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+.navbar-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+}
+
+
+/* ✅ Responsive shrink — but still horizontal */
+@media (max-width: 420px) {
+  .navbar {
+    padding: 0.5rem 3vw;
+    gap: 0.4rem;
+  }
+
+  .navbar-welcome {
+    font-size: 1.1rem;
+  }
+
+  .navbar-logo {
+    height: 32px;
+  }
+
+  .navbar-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .navbar-left {
+    justify-content: flex-start;
+  }
+
+  .navbar-right {
+    justify-content: flex-end;
+  }
+}

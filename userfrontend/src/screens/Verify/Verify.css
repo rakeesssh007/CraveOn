@@ -1,0 +1,25 @@
+/* Verify.css */
+.verify-screen {
+  display: flex;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.verifying .loader {
+  width: 80px;
+  height: 80px;
+  border: 6px solid var(--surface-color);
+  border-top-color: var(--theme-color);
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+  margin: 0 auto;
+}
+
+.verifying p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-color-secondary);
+}

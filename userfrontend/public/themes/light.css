@@ -1,0 +1,23 @@
+.light {
+  --bg-color: #fff9f0;
+  --surface-color: #fef1eb;
+  --theme-color: #d64545;
+  --text-color: #2c2c2c;
+  --text-color-secondary: #555;
+  --button-bg: #ffb347;
+  --button-hover: #ff9900;
+  --button-text: #1b1b1b;
+  --header-bg: #111;
+  --card-bg: #ffffff;
+}
+
+.light body {
+  background: linear-gradient(to bottom right, #fff9f0, #fef1eb);
+}
+.light {
+  /* ... existing vars ... */
+  --footer-bg: #f0e3dc;               /* slightly darker than body */
+  --footer-text: #2c2c2c;
+  --footer-secondary: #555;
+  --footer-divider: #e0d8d5;
+}

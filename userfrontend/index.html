@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/logo_icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraveOn</title>
+
+    <!-- Prevent white flash by applying saved theme instantly -->
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Default stylesheet will be swapped by JS -->
+    <link id="theme-link" rel="stylesheet" href="/themes/dark.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+/* PlaceOrder.css */
+.place-order {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+
+.place-order-left,
+.place-order-right {
+  flex: 1;
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.place-order-left h2 {
+  margin-bottom: 1rem;
+  color: var(--theme-color);
+}
+
+.multi-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: var(--theme-color);
+}
+
+.place-order-right .cart-total {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-total-details.total {
+  font-weight: 700;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+}
+
+.place-order-right button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--theme-color);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+  }
+}
