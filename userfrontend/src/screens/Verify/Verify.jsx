@@ -27,7 +27,7 @@ const Verify = () => {
       }
     } catch (error) {
       console.error("Verification failed:", error);
-      navigate('/');
+      navigate('myorders');
     }
   };
 
