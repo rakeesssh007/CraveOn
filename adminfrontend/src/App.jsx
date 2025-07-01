@@ -9,7 +9,7 @@ import Orders from './screens/Orders/Orders';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 
-const url = 'http://localhost:4000';
+const url = 'https://craveon-2yg1.onrender.com';
 
 const App = () => {
   return (
