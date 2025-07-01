@@ -3,7 +3,7 @@ const userModel = require('../models/userModel')
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder = async(req,res)=>{
-    const frontend_url = 'http://localhost:5173' // Change this to your frontend URL in production
+    const frontend_url = 'https://craveon-bvps.onrender.com/' // Change this to your frontend URL in production
 
     try {
         
