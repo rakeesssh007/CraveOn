@@ -25,6 +25,7 @@ const App = () => {
             <Route path="/create" element={<CreateItem url={url} />} />
             <Route path="/inventory" element={<Inventory url={url} />} />
             <Route path="/orders" element={<Orders url={url} />} />
+            <Route path="*" element={<Dashboard />} />
           </Routes>
         </main>
       </div>
